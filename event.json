@@ -1,0 +1,21 @@
+{
+  "httpMethod": "GET",
+  "path": "/usuarios/123",
+  "headers": {
+    "Content-Type": "application/json",
+    "Authorization": "Bearer FakeToken"
+  },
+  "queryStringParameters": {
+    "ativo": "true"
+  },
+  "pathParameters": {
+    "id": "123"
+  },
+  "requestContext": {
+    "accountId": "123456789012",
+    "stage": "test",
+    "requestId": "teste-local-001"
+  },
+  "body": null,
+  "isBase64Encoded": false
+}
