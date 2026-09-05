@@ -1,8 +1,12 @@
-## API Gateway Lambda
+## API Serverless 
 
-#### 1. Como rodar
+## 1. Sobre
+### 1.1. Informações Gerais
+- ...
+- ...
 
-Na raiz do projeto, use o comando:
-```bash
-python3 -m test.test_local_lambda
-```
+### 1.2. Tecnologias
+- Python
+- AWS Lambda
+- AWS Lambda Powertools
+
