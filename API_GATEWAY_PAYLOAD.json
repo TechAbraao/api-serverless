@@ -1,15 +1,9 @@
 {
   "httpMethod": "GET",
-  "path": "/usuarios/123",
+  "path": "/api/contacts",
   "headers": {
     "Content-Type": "application/json",
     "Authorization": "Bearer FakeToken"
-  },
-  "queryStringParameters": {
-    "ativo": "true"
-  },
-  "pathParameters": {
-    "id": "123"
   },
   "requestContext": {
     "accountId": "123456789012",

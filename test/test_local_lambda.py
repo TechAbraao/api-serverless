@@ -1,7 +1,7 @@
 import json
 from src.lambda_function import lambda_handler
 
-with open("event.json") as f:
+with open("API_GATEWAY_PAYLOAD.json") as f:
     event = json.load(f)
 
 context = {}
