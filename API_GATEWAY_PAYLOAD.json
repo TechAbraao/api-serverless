@@ -3,7 +3,7 @@
   "path": "/api/contacts",
   "headers": {
     "Content-Type": "application/json",
-    "Authorization": "Bearer FakeToken"
+    "Authorization": "Bearer TokenJWTFake"
   },
   "requestContext": {
     "accountId": "123456789012",

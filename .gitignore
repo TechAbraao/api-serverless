@@ -32,9 +32,13 @@ MANIFEST
 *.manifest
 *.spec
 
-# Installer logs
+# Installer logger
 pip-log.txt
 pip-delete-this-directory.txt
+
+# Database
+*.db
+database.db
 
 # Unit test / coverage reports
 htmlcov/
@@ -173,13 +177,46 @@ cython_debug/
 # PyPI configuration file
 .pypirc
 
-# Ignore logs
-logs/
+*.dll
+*.exe
+.DS_Store
+example.tf
+terraform.tfplan
+terraform.tfstate
+bin/
+modules-dev/
+/pkg/
+website/.vagrant
+website/.bundle
+website/build
+website/node_modules
+.vagrant/
+*.backup
+./*.tfstate
+.terraform/
 *.log
-/logs/
-jobs/data/*.txt
-jobs/data/archives/*.txt
-jobs/data/*.db
+*.bak
+*~
+.*.swp
+.idea
+*.iml
+*.test
+*.iml
 
-# Ignore KEYWORDS.md
-KEYWORDS.md
+website/vendor
+
+# Test exclusions
+!command/test-fixtures/**/*.tfstate
+!command/test-fixtures/**/.terraform/
+
+node_modules/
+*.zip
+tfplan.out
+plan.tfout
+
+# Ignorar os arquivos de variáveis do Terraform
+*.tfvars
+
+# Ignorar arquivos com .csv e .txt
+*.csv
+*.txt
