@@ -1,0 +1,14 @@
+{
+  "httpMethod": "GET",
+  "path": "/api/contacts",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "requestContext": {
+    "accountId": "123456789012",
+    "stage": "test",
+    "requestId": "teste-local-001"
+  },
+  "body": null,
+  "isBase64Encoded": false
+}
