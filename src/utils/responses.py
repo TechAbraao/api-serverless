@@ -6,13 +6,16 @@ def api_success(
         headers: dict, 
         body: dict
 ):
+    """ 
+    Returna um dicionário representando uma resposta de sucesso da API. 
+    """
+    
     return {
         "statusCode": status_code,
         "responseTime": response_time,
         "headers": headers,
         "body": body
     }
-
 
 def api_error(
         status_code: int, 
@@ -21,6 +24,10 @@ def api_error(
         reason_failure: str,
         msg: str
         ):
+    """ 
+    Returna um dicionário representando uma resposta de erro da API. 
+    """
+
     return {
         "statusCode": status_code,
         "responseTime": response_time,

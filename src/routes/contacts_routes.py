@@ -2,7 +2,7 @@ from aws_lambda_powertools.event_handler import Request
 from aws_lambda_powertools import Logger
 from src.utils.responses import api_success, api_error
 from src.utils.errors import ReasonFailure, DEFAULT_ERROR_MESSAGES
-from src.mocks import TOKEN_JWT, CONTACTS
+from src.utils.mocks import TOKEN_JWT, CONTACTS
 from src import app
 import time
 
@@ -39,17 +39,16 @@ def get_contacts(req: Request):
         response_time_ms = (end - start) * 1000
 
         logger.error("Invalid token provided.")
-        return {
-            "statusCode": 401,
-            "responseTimeMs": response_time_ms,
-            "headers": {
-                "Content-Type": content_type_header ,
-                "Authorization": authorization_header
-            },
-            "body": {   
-                "errorDescription": "Invalid Token",
-            }
-        }
+        return api_error(
+                status_code=401,
+                response_time=response_time_ms,
+                headers={
+                    "Content-Type": content_type_header ,
+                    "Authorization": authorization_header
+                },
+                reason_failure=ReasonFailure.INVALID_TOKEN,
+                msg=DEFAULT_ERROR_MESSAGES[ReasonFailure.INVALID_TOKEN]
+            )
 
     end = time.time()
     response_time_ms = (end - start) * 1000
