@@ -12,7 +12,6 @@
 - AWS Lambda Powertools (Event Handler / `APIGatewayRestResolver`)
 - AWS API Gateway (REST API: payload v1)
 - AWS CLI
-- IAM User válido
 - Terraform
 > __Importante__: O IAM User utilizado pela aplicação deve possuir as permissões necessárias para realizar as operações no `AWS Lambda.` Em ambientes de desenvolvimento, pode utilizar a política `AdministratorAccess`.
 
